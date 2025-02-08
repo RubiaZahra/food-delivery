@@ -1,0 +1,267 @@
+body {
+    width: 1200px;
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+    padding: 0;
+  }
+*{
+    scroll-behavior: smooth;
+}
+
+.icon {
+    position: relative;
+}
+
+.dot {
+    min-width: 8px;
+    min-height: 8px;
+    background-color: red;
+    position: absolute;
+    border-radius: 5px;
+    top: 4px;
+    right: 15px;
+
+}
+
+.main {
+    height: 100vh;
+    width: 100%;
+    margin: 30px auto;
+    background: url('https://img.freepik.com/premium-photo/yellow-background-with-burger-french-fries_916191-788.jpg');
+    
+    position: relative;
+    background-size: cover;
+}
+
+.body-content {
+    margin-bottom: 5%;
+    bottom: 18%;
+    left: 10vh;
+    
+}
+
+.btn {
+    background-color: #148852e1!important;
+    color:white; 
+    border:none !important;
+}
+.btn:hover{
+    background-color: rgb(11, 105, 11) !important;
+}
+.food-display{
+    margin-top: 30px;
+   
+    
+}
+.fooddisplay-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    margin-top: 30px;
+    gap: 10px;
+    row-gap: 10px;
+}
+.food-item{
+    width: 70%;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0px,0px,10px,rgb(238, 238, 27);
+    transition: 0.8s;
+    gap:5px;
+    
+}
+.item-name{
+  display: flex;
+ align-items: center;
+ justify-content: space-between;
+ margin-bottom: 5px;
+ padding: 2px;
+ gap: 10px;
+ 
+}
+.item-img{
+    width: 100%;
+    height: 20vh;
+    border-radius: 10px 10px;
+    display:inline-block;
+    object-fit: cover;
+    gap:5px;
+    
+}
+
+ .item-name p{ 
+margin-bottom: 5px; 
+padding-bottom: 2px;
+font-size: 18px;
+font-weight: 500;
+color:rgb(116, 115, 115);
+
+
+} 
+ .stars{
+display: inline-block;
+width: 80px;
+}
+.item-price p{
+    margin: 10px 0px;
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(11, 105, 11);
+}
+   .item-container{
+    position: relative;
+   }
+
+   .plus-icon{
+    position: absolute;
+    width: 20px;
+    cursor: pointer;
+    top: 80px;
+    right: 20px;
+    border-radius: 40px ;
+    font-size: large;
+    color:  yellow;
+    background-color: rgb(0, 0, 0);
+
+   }
+   .item-add{
+    position: absolute;
+    
+    gap:10px;
+    top:70px ;
+    right:20px ;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    border-radius: 30px;
+    background-color: white;
+   } 
+ 
+   .footer{
+    background-color: rgb(46, 45, 45);
+    color: rgb(221, 217, 217);
+    padding: 20px 8vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-top: 60px;
+    margin-top: 100px;
+    
+   }
+.footer-content{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 50px;
+}
+.footer-left,.footer-center,.footer-right{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.logo{
+    display: inline-block;
+    border-radius: 40px;
+
+}
+.footer-left li,.footer-center li,.footer-right li{
+    list-style: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.copy-right p{
+    
+    text-align: center
+}
+@media (max-width:750px){
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+        gap:30px
+    }
+    .copy-right{
+        text-align: center;
+    }
+   }
+   .app-download{
+    margin: auto auto;
+    margin-top: 70px;
+    font-size: max(2vw , 20px);
+    text-align: center;
+    font-weight: 500;
+     
+   }
+   .app-download img{
+    display: inline-block;
+     cursor: pointer;
+     transition:0.5s, 
+   }
+   .app-download img:hover{
+    transform: scale(1.05);
+   
+   }
+   .popup{
+    position: absolute;
+    top: 70px;
+     z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: #57575790;
+    display: grid;
+   }
+   
+   
+    .login-form{
+   
+    place-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:max(25vw,350px);
+    background-color: white;
+    color: rgb(139, 138, 138);
+    gap:20px ;
+    padding:28px,30px;
+    padding-left: 20px;
+    margin: 15px;
+    border-radius: 8px;
+    font-size: 14px;
+   }
+   .login-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    gap: 190px;
+   }
+  .cross-icon{
+    cursor: pointer;
+  }
+  .login-input input{
+       outline: none;
+       border: 1px solid rgb(175, 172, 172);
+       border-radius: 4px;
+       padding: 5px;
+       width:300px;
+  } 
+  .conditions{
+    display: flex;
+    align-items: start;
+    padding: 3px;
+    gap: 10px;
+    margin-top: -15px;
+  }
+  .popup p span{
+    color: green;
+    cursor: pointer;
+    font-size: medium;
+ 
+  }
+
+
+  
+
