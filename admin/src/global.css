@@ -1,0 +1,107 @@
+*{
+    
+    box-sizing: border-box;
+    
+}
+body{
+    min-height: 100vh;
+    background-color: rgb(255, 247, 247);
+}
+hr{
+ border: none;
+ height: 2px;
+ background-color:rgb(255, 255, 3);
+}
+.admin-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.profile{
+    font-size:xx-large;
+    
+}
+.sidebar{
+    
+    width: 20%;
+    height: 100vh;
+    border: 2px solid rgb(59, 59, 59);
+    border-top: 5;
+    margin-top: 2px;
+}
+.options{
+    display: flex;
+    flex-direction: column;
+    padding-top: 13px;
+    padding-left: 20px;
+    cursor: pointer;
+    gap: 10px;
+}
+.sidebar h3{
+    margin-top: 18px;
+    font-size: x-large;
+   padding-left: 3px ;
+   padding-top: 8px;
+}
+.icon-list{
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(179, 177, 177);
+    padding: 0%;
+    margin-right:2px;
+    gap: 10px;
+    font-size: large;
+   
+}
+a{
+    text-decoration: none;
+    color: rgb(92, 90, 90);
+}
+.icon-list.active{
+    background-color:rgb(247, 247, 86);
+    border-color: rgb(3, 163, 3);
+}
+
+.app-content{
+    display: flex;
+}
+.add{
+      width: 70%;
+      padding: 1rem;
+        margin-left: 30px;
+        margin-top: 30px;
+}
+.add form{
+    gap: 20px;
+}
+
+.img-upload{
+    width: 120px;
+}
+.img-icon{
+    padding: 30px;
+    font-size: x-large;
+}
+
+.add-products input,.product-description textarea{
+    padding: 10px;
+    gap: 10px;
+    width: max(40%,280px);
+}
+.cat-price{
+    display: flex;
+    gap: 30px;
+}
+.cat-price select,.add-price input{
+    max-width: 100px;
+    padding: 8px;
+}
+.btn{
+    width: 120px;
+    padding: 10px;
+    border: none;
+    background-color:green;
+    color: white;
+    margin-top: 20px;
+    cursor: pointer;
+}
